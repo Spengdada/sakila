@@ -14,4 +14,6 @@ public interface FilmService {
      void updateFilm(Film film);
 
      List<Film> selectAllFilm();
+
+     Film selectById(int id);
 }

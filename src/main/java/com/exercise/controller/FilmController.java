@@ -25,6 +25,11 @@ public class FilmController {
         return Result.success(filmService.selectAllFilm());
     }
 
+    @GetMapping("{id}")
+    public Result getFilmById(@PathVariable int id) {
+        return Result.success(filmService.selectById(id));
+    }
+
     @PostMapping("/insert")
     public Result addFilm(@RequestBody Film film) {
         filmService.addFilm(film);

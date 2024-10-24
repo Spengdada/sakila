@@ -33,4 +33,9 @@ public class FilmServiceImp implements FilmService {
     public List<Film> selectAllFilm() {
         return filmMapper.selectList(null);
     }
+
+    @Override
+    public Film selectById(int id) {
+        return filmMapper.selectById(id);
+    }
 }

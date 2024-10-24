@@ -1,5 +1,6 @@
 package com.exercise.entity;
 
+import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -9,6 +10,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class Film {
 
+  @TableId()
   private long filmId;
   private String title;
   private String description;
